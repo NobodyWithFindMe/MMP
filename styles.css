@@ -1,0 +1,22 @@
+﻿/* Добавляем стили для текста */
+body, html {
+  color: #ffffff; /* Устанавливаем белый цвет текста для всего документа */
+}
+
+/* Добавляем стили для кнопок */
+.controls button {
+  padding: 20px 40px; /* Увеличиваем размер кнопок */
+  margin: 0 10px; /* Добавляем небольшие отступы между кнопками */
+  font-size: 1.2em; /* Увеличиваем размер текста кнопок */
+}
+
+.background {
+  background-image: url('purple-rain-wallpaper.gif'), url('gif.gif'); /* Путь к вашим GIF-изображениям */
+  background-size: cover, auto; /* Устанавливаем размер фоновых изображений */
+  background-repeat: no-repeat; /* Отключаем повторение фоновых изображений */
+  background-position: top right, left bottom; /* Устанавливаем позицию фоновых изображений */
+  height: 100vh; /* Занимает 100% высоты окна браузера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

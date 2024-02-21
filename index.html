@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аудио Плеер</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .btn-large {
+      width: 200px; /* Увеличенная ширина для кнопки */
+    }
+  </style>
+</head>
+<body>
+<div class="background">
+  <div class="container">
+    <h1 id="title" class="center-align">Мой Аудио Плеер</h1>
+    <audio id="audio-player" class="responsive-audio"></audio>
+    <div class="controls center-align">
+      <button id="play-pause" class="btn-large">Воспроизвести</button>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" class="volume-range">
+      <label for="volume" id="volume-label">Громкость</label>
+      <button id="stop" class="btn-large">Стоп</button>
+      <button id="choose-file" class="btn-large">Выбрать файл</button>
+    </div>
+    <div class="language-switch right-align">
+      <button id="language-toggle" class="btn-small">Русский</button>
+    </div>
+    <div class="progress">
+      <span id="elapsed-time">0:00</span>
+      <input type="range" id="progress" min="0" step="1" value="0">
+      <span id="total-time">0:00</span>
+    </div>
+    <p id="song-name" class="center-align"></p>
+    <p id="footer" class="center-align">By <a href="https://github.com/NobodyWithFindMe">NobodyWithFindMe</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
